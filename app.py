@@ -8,7 +8,7 @@ CORS(app)
 
 def connect_db():
     return psycopg2.connect(
-        dbname='postgress',
+        dbname='postgres',
         user='postgres',
         password=os.getenv('POSTGRES_PASSWORD'),
         host='db'
