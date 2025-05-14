@@ -11,7 +11,8 @@ def connect_db():
         dbname='postgres',
         user='postgres',
         password=os.getenv('POSTGRES_PASSWORD'),
-        host='db'
+        host='13.218.77.245'
+        port = 5432
     )
 
 @app.route('/add', methods=['POST'])
